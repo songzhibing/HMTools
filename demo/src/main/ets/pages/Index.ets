@@ -1,7 +1,9 @@
+import { HMToolsHeader } from 'hmtools';
+
 @Entry
 @Component
 struct Index {
-  @State message: string = 'Hello World';
+  @State message: string = `Hello ${HMToolsHeader.libName} v${HMToolsHeader.libVersion}`;
 
   build() {
     RelativeContainer() {
